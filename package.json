@@ -1,12 +1,19 @@
 {
   "name": "reason-on-rails",
   "private": true,
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
+  },
   "dependencies": {
     "@rails/webpacker": "3.5",
     "babel-preset-react": "^6.24.1",
-    "prop-types": "^15.6.2",
+    "bs-loader": "^2.0.7",
+    "bs-platform": "^4.0.14",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "reason-react": ">=0.5.3"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
